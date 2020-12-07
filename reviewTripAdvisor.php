@@ -51,8 +51,8 @@ if ($div_elements->length <> 0){
     if ($div_element->getAttribute('class') == 'glasR4aX'){
 		$reviews_tt[] = $div_element->nodeValue;
     }
-    if ($div_element->getAttribute('class') == 'cPQsENeY'){
-		$reviews_rt[] = $div_element->nodeValue;
+    if ($div_element->getAttribute('class') == '_3hDPbqWO'){
+		$reviews_rt[] = getStringBetween($div_element->nodeValue,0,"Scopri di più");
     }
     if ($div_element->getAttribute('class') == 'nf9vGX55'){
 		$spans=$div_element->getElementsByTagName('span');
@@ -63,9 +63,6 @@ if ($div_elements->length <> 0){
   }
 }
 //print_r($reviews);
-array_splice($reviews_rt,0,1);
-array_merge($reviews_rt);
-
 echo $reviews_ut[0].$reviews_dt[0].$reviews_lt[0].$reviews_tt[0].$reviews_rt[0].$reviews_vt[0];
 
 ?>
