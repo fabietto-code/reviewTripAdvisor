@@ -63,6 +63,9 @@ if ($div_elements->length <> 0){
   }
 }
 //print_r($reviews);
+array_splice($reviews_rt,0,1);
+array_merge($reviews_rt);
+
 echo $reviews_ut[0].$reviews_dt[0].$reviews_lt[0].$reviews_tt[0].$reviews_rt[0].$reviews_vt[0];
 
 ?>
